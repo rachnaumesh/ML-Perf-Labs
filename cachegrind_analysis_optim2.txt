@@ -1,0 +1,97 @@
+--------------------------------------------------------------------------------
+-- Metadata
+--------------------------------------------------------------------------------
+Invocation:       /usr/bin/cg_annotate cachegrind.out.3725292
+Command:          ./gpt2_optimized
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Threshold:        0.1%
+Annotation:       on
+
+--------------------------------------------------------------------------------
+-- Summary
+--------------------------------------------------------------------------------
+Ir_____________________ 
+
+15,314,042,794 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+-- File:function summary
+--------------------------------------------------------------------------------
+  Ir__________________________  file:function
+
+< 6,373,876,232 (41.6%, 41.6%)  ???:
+  2,798,497,522 (18.3%)           initialize_linear_layer
+  2,170,022,286 (14.2%)           linear._omp_fn.0
+    867,213,891  (5.7%)           initialize_weights
+    510,205,546  (3.3%)           ???
+
+< 4,358,441,838 (28.5%, 70.1%)  ./stdlib/./stdlib/random_r.c:
+  4,358,435,626 (28.5%)           random_r
+
+< 3,584,272,916 (23.4%, 93.5%)  ./stdlib/./stdlib/random.c:
+  3,584,272,896 (23.4%)           random
+
+<   935,027,712  (6.1%, 99.6%)  ./stdlib/./stdlib/rand.c:rand
+
+<    44,323,725  (0.3%, 99.9%)  ./malloc/./malloc/malloc.c:
+     21,906,736  (0.1%)           _int_malloc
+
+--------------------------------------------------------------------------------
+-- Function:file summary
+--------------------------------------------------------------------------------
+  Ir__________________________  function:file
+
+> 4,358,435,626 (28.5%, 28.5%)  random_r:./stdlib/./stdlib/random_r.c
+
+> 3,584,272,896 (23.4%, 51.9%)  random:./stdlib/./stdlib/random.c
+
+> 2,798,497,522 (18.3%, 70.1%)  initialize_linear_layer:???
+
+> 2,170,022,286 (14.2%, 84.3%)  linear._omp_fn.0:???
+
+>   935,027,712  (6.1%, 90.4%)  rand:./stdlib/./stdlib/rand.c
+
+>   867,213,891  (5.7%, 96.1%)  initialize_weights:???
+
+>   510,205,546  (3.3%, 99.4%)  ???:???
+
+>    21,906,736  (0.1%, 99.6%)  _int_malloc:./malloc/./malloc/malloc.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./malloc/./malloc/malloc.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./malloc/./malloc/malloc.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./stdlib/./stdlib/rand.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./stdlib/./stdlib/rand.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./stdlib/./stdlib/random.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./stdlib/./stdlib/random.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./stdlib/./stdlib/random_r.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./stdlib/./stdlib/random_r.c
+
+--------------------------------------------------------------------------------
+-- Annotation summary
+--------------------------------------------------------------------------------
+Ir___________________ 
+
+            0            annotated: files known & above threshold & readable, line numbers known
+            0            annotated: files known & above threshold & readable, line numbers unknown
+            0          unannotated: files known & above threshold & two or more non-identical
+8,922,066,191 (58.3%)  unannotated: files known & above threshold & unreadable 
+   18,100,371  (0.1%)  unannotated: files known & below threshold
+6,373,876,232 (41.6%)  unannotated: files unknown
+
