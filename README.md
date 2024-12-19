@@ -1,1 +1,1 @@
-# Assignment 3: Optimize the performance of the ML operations implemented using sparsity
+## Optimize the performance of the ML operations implemented using sparsity
