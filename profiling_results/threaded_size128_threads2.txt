@@ -1,0 +1,1 @@
+Testing matrix multiplication with square matrices A: 128x128 and B: 128x128 using 2 threads

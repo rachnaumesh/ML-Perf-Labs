@@ -1,0 +1,7 @@
+Area,Value,Unit,Description,Sample,Stddev,Multiplex,Bottleneck,Idle
+Frontend_Bound,2.7,% Slots <,,frontend_retired.latency_ge_4,0.0,83.0,,
+Bad_Speculation,1.0,% Slots <,,,0.0,83.0,,
+Backend_Bound,43.5,% Slots,,topdown.backend_bound_slots,0.0,83.0,<==,
+Retiring,52.8,% Slots <,,uops_retired.slots,0.0,83.0,,
+MUX,83.0,%,,,0.0,100.0,,
+# 4.8-full-perf on INTEL(R) XEON(R) SILVER 4514Y [spr/sapphire_rapids]
