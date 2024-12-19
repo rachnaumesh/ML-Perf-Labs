@@ -33,8 +33,8 @@ The project involves building a foundational machine learning library and system
 
 ### Cloning the Repo
 ```bash
-git clone https://github.com/username/repo-name.git
-cd repo-name
+git clone https://github.com/rachnaumesh/ML-Perf-Labs.git
+cd ML-Perf-Labs
 ```
 
 ## Switching Branches
